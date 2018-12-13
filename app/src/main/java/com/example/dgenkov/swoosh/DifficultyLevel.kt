@@ -10,5 +10,7 @@ class DifficultyLevel : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.difficulty_level)
 
+        val league = intent.getStringExtra(EXTRA_LEAGUE)
+        println(league)
     }
 }
