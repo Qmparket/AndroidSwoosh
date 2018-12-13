@@ -23,6 +23,9 @@
 
         <activity android:name=".DesiredLeagueActivity">
         </activity>
+
+        <activity android:name=".DifficultyLevel">
+        </activity>
     </application>
 
 </manifest>
