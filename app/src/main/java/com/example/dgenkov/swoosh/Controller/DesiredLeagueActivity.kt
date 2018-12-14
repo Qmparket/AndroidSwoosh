@@ -1,10 +1,12 @@
-package com.example.dgenkov.swoosh
+package com.example.dgenkov.swoosh.Controller
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.dgenkov.swoosh.Utilities.EXTRA_LEAGUE
+import com.example.dgenkov.swoosh.R
 import kotlinx.android.synthetic.main.activity_desired_league.*
 
 class DesiredLeagueActivity : AppCompatActivity() {
@@ -16,7 +18,7 @@ class DesiredLeagueActivity : AppCompatActivity() {
 
         nextButton.setOnClickListener {
             if (selectedLeague != "") {
-                val skillIntent = Intent(this,DifficultyLevel::class.java)
+                val skillIntent = Intent(this, DifficultyLevel::class.java)
                 skillIntent.putExtra(EXTRA_LEAGUE,selectedLeague)
                 startActivity(skillIntent)
             } else {
@@ -40,7 +42,7 @@ class DesiredLeagueActivity : AppCompatActivity() {
     fun onCoedClicked(view: View) {
         womensButton.isChecked = false
         mensButton.isChecked = false
-        selectedLeague = "coed"
+        selectedLeague = "co-ed"
     }
 
 

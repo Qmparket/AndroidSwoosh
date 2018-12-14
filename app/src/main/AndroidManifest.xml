@@ -9,7 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".Controller.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -21,10 +21,11 @@
                 android:name="preloaded_fonts"
                 android:resource="@array/preloaded_fonts"/>
 
-        <activity android:name=".DesiredLeagueActivity">
+        <activity android:name=".Controller.DesiredLeagueActivity">
         </activity>
-
-        <activity android:name=".DifficultyLevel">
+        <activity android:name=".Controller.DifficultyLevel">
+        </activity>
+        <activity android:name=".Controller.FinishActivity">
         </activity>
     </application>
 

@@ -1,8 +1,9 @@
-package com.example.dgenkov.swoosh
+package com.example.dgenkov.swoosh.Controller
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.dgenkov.swoosh.R
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 class WelcomeActivity : AppCompatActivity() {
@@ -12,7 +13,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
         getStartedButton.setOnClickListener {
-            val welcomeIntent = Intent(this,DesiredLeagueActivity::class.java)
+            val welcomeIntent = Intent(this, DesiredLeagueActivity::class.java)
             startActivity(welcomeIntent)
         }
 
